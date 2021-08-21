@@ -1,4 +1,4 @@
-require_relative "misc"
+Optcarrot::PKG.require 'optcarrot/driver/misc.rb.rbc'
 
 module Optcarrot
   # Video output driver for Sixel (this is a joke feature)

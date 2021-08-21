@@ -1,5 +1,5 @@
-require_relative "sfml"
-require_relative "misc"
+Optcarrot::PKG.require 'optcarrot/driver/sfml.rb.rbc'
+Optcarrot::PKG.require 'optcarrot/driver/misc.rb.rbc'
 
 module Optcarrot
   # Video output driver for SFML

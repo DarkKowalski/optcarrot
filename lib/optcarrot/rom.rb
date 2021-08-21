@@ -4,10 +4,10 @@ module Optcarrot
     MAPPER_DB = { 0x00 => self }
 
     # These are optional
-    require_relative "mapper/mmc1"
-    require_relative "mapper/uxrom"
-    require_relative "mapper/cnrom"
-    require_relative "mapper/mmc3"
+    Optcarrot::PKG.require 'optcarrot/mapper/mmc1.rb.rbc'
+    Optcarrot::PKG.require 'optcarrot/mapper/uxrom.rb.rbc'
+    Optcarrot::PKG.require 'optcarrot/mapper/cnrom.rb.rbc'
+    Optcarrot::PKG.require 'optcarrot/mapper/mmc3.rb.rbc'
 
     def self.zip_extract(filename)
       require "zlib"

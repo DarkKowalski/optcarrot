@@ -1,4 +1,4 @@
-require_relative "sdl2"
+Optcarrot::PKG.require 'optcarrot/driver/sdl2.rb.rbc'
 
 module Optcarrot
   # Audio output driver for SDL2

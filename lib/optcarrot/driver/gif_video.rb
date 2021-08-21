@@ -1,5 +1,4 @@
-require_relative "misc"
-
+Optcarrot::PKG.require 'optcarrot/driver/misc.rb.rbc'
 module Optcarrot
   # Video output driver saving an animation GIF file
   class GIFVideo < Video

@@ -1,4 +1,4 @@
-require_relative "sdl2"
+Optcarrot::PKG.require 'optcarrot/driver/sdl2.rb.rbc'
 
 module Optcarrot
   # Input driver for SDL2

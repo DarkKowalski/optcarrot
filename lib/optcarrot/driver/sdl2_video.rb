@@ -1,5 +1,5 @@
-require_relative "sdl2"
-require_relative "misc"
+Optcarrot::PKG.require 'optcarrot/driver/sdl2.rb.rbc'
+Optcarrot::PKG.require 'optcarrot/driver/misc.rb.rbc'
 
 module Optcarrot
   # Video output driver for SDL2

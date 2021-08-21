@@ -1,4 +1,4 @@
-require_relative "sfml"
+Optcarrot::PKG.require 'optcarrot/driver/sfml.rb.rbc'
 
 module Optcarrot
   # Input driver for SFML

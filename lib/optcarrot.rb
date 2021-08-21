@@ -1,14 +1,17 @@
 # Optcarrot namespace
+require 'iseqc'
+
 module Optcarrot
   VERSION = "0.9.0"
+  PKG = Iseqc::Unpack.unpack('optcarrot.rpk')
 end
 
-require_relative "optcarrot/nes"
-require_relative "optcarrot/rom"
-require_relative "optcarrot/pad"
-require_relative "optcarrot/cpu"
-require_relative "optcarrot/apu"
-require_relative "optcarrot/ppu"
-require_relative "optcarrot/palette"
-require_relative "optcarrot/driver"
-require_relative "optcarrot/config"
+Optcarrot::PKG.require "optcarrot/nes.rb.rbc"
+Optcarrot::PKG.require "optcarrot/rom.rb.rbc"
+Optcarrot::PKG.require "optcarrot/pad.rb.rbc"
+Optcarrot::PKG.require "optcarrot/cpu.rb.rbc"
+Optcarrot::PKG.require "optcarrot/apu.rb.rbc"
+Optcarrot::PKG.require "optcarrot/ppu.rb.rbc"
+Optcarrot::PKG.require "optcarrot/palette.rb.rbc"
+Optcarrot::PKG.require "optcarrot/driver.rb.rbc"
+Optcarrot::PKG.require "optcarrot/config.rb.rbc"

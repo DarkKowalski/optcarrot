@@ -40,7 +40,8 @@ module Optcarrot
       if name
         klass = DRIVER_DB[type][name]
         raise "unknown #{ type } driver: #{ name }" unless klass
-        require_relative "driver/#{ name }_#{ type }" unless name == :none
+        Optcarrot::PKG.require "optcarrot/driver/#{ name }_#{ type }.rb.rbc" unless name == :none
+        #require_relative "driver/#{ name }_#{ type }" unless name == :none
         conf.debug("`#{ name }' #{ type } driver is selected")
         Optcarrot.const_get(klass)
       else

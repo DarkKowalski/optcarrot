@@ -1,4 +1,4 @@
-require_relative "opt"
+Optcarrot::PKG.require "optcarrot/opt.rb.rbc"
 
 module Optcarrot
   # PPU implementation (video output)
